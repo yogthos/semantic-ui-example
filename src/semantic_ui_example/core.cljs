@@ -13,8 +13,8 @@
       [:> ui/Input {:placeholder "some input"}]]
      [:> ui/Grid.Column
       [:p "column 2"]]
-      [:> ui/Grid.Column
-        [:p "column 3"]]]])
+     [:> ui/Grid.Column
+      [:p "column 3"]]]])
 
 (defn mount-root []
   (r/render [home-page] (.getElementById js/document "app")))
