@@ -6,7 +6,8 @@
 
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [org.clojure/clojurescript "1.10.516"]
-                 [reagent "0.8.1"]
+                 [reagent "0.8.1"
+                  :exclusions [cljsjs/react cljsjs/react-dom]]
                  [cljsjs/semantic-ui-react "0.84.0-0"]]
 
   :plugins [[lein-cljsbuild "1.1.7"]

@@ -1,0 +1,24 @@
+{
+  "name": "semantic-ui-datepicker",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "semantic-ui-calendar-react": "^0.13.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.84.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  }
+}

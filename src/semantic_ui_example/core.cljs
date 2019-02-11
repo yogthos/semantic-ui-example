@@ -3,6 +3,15 @@
       [reagent.core :as r]
       [cljsjs.semantic-ui-react :as ui]))
 
+(defn date-picker []
+  (r/with-let [date (r/atom nil)]
+    [:> js/DateInput
+     {:name "date"
+      :placeholder ""
+      :value @date
+      :onChange (fn [event v]
+                  (reset! date (.-value v)))}]))
+
 (defn home-page []
   [:> ui/Grid
    {:centered true
@@ -14,7 +23,7 @@
      [:> ui/Grid.Column
       [:p "column 2"]]
      [:> ui/Grid.Column
-      [:p "column 3"]]]])
+      [date-picker]]]])
 
 (defn mount-root []
   (r/render [home-page] (.getElementById js/document "app")))

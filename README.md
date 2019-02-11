@@ -1,9 +1,12 @@
 
 ### Development mode
 
-To start the Figwheel compiler, navigate to the project folder and run the following command in the terminal:
+To build webpack and start the Figwheel compiler, navigate to the project folder and run the following commands in the terminal:
 
 ```
+cd semantic-ui-calendar
+npm run build
+cd ..
 lein figwheel
 ```
 
