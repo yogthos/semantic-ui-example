@@ -4,7 +4,7 @@
       [cljsjs.semantic-ui-react :as ui]))
 
 (defn date-picker []
-  (r/with-let [date (r/atom nil)]
+  (r/with-let [date (r/atom "")]
     [:> js/DateInput
      {:name "date"
       :placeholder ""
@@ -15,13 +15,11 @@
 (defn home-page []
   [:> ui/Grid
    {:centered true
-    :columns 3
+    :columns 2
     :divided true}
    [:> ui/Grid.Row
      [:> ui/Grid.Column
-      [:> ui/Input {:placeholder "some input"}]]
-     [:> ui/Grid.Column
-      [:p "column 2"]]
+      [:> ui/Input {:placeholder "event"}]]
      [:> ui/Grid.Column
       [date-picker]]]])
 

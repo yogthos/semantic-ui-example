@@ -36,8 +36,7 @@
                          :optimizations :none
                          :pretty-print  true}
                         :figwheel
-                        {:on-jsload "semantic-ui-example.core/mount-root"
-                         :open-urls ["http://localhost:3449/index.html"]}}
+                        {:on-jsload "semantic-ui-example.core/mount-root"}}
                        :release
                        {:source-paths ["src" "env/prod/cljs"]
                         :compiler

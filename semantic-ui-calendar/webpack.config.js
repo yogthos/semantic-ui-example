@@ -5,14 +5,7 @@ module.exports = {
   output: {
     filename: 'semantic-ui-calendar.js',
     path: path.resolve(__dirname, '../public/vendor/js')
+  },
+  externals: {    
   }
-  /*
-  ,
-  externals: {
-    "react": "react",
-    "react-dom": "react-dom",
-    "semantic-ui-css": "semantic-ui-css",
-    "semantic-ui-react": "semantic-ui-react"
-  }
-  */
 };
